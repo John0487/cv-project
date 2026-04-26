@@ -1,0 +1,101 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #333;
+}
+
+/* Encabezado */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 4px;
+}
+
+header p {
+    color: #2e7d32;
+    font-weight: bold;
+    margin: 0;
+}
+
+header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+}
+
+/* Títulos de sección */
+h2 {
+    color: #2e7d32;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+
+/* Títulos de experiencia y educación */
+h3 {
+    color: #2e7d32;
+    margin-bottom: 4px;
+}
+
+/* Contacto */
+address {
+    font-style: normal;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* Listas */
+ul {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+/* Links */
+a {
+    color: #2e7d32;
+}
+
+@media (max-width: 600px){
+    body {
+        max-width: 100%;
+        margin: 0;
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.95rem;
+    }
+}
+
+.download-btn {
+    text-align: right;
+    margin-bottom: 24px;
+}
+
+.download-btn a {
+    background-color: #2e7d32;
+    color:white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.download-btn a:hover {
+    background-color: #1b5e20;
+}
