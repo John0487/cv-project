@@ -25,7 +25,7 @@
     <body>
         <header>
             <h1>John Carreño</h1>
-            <p>Developer</p>
+            <p id="job-title">Developer</p>
             <address>
                 <p>16 entre Francisco Segura y Sedalana, Guayaquil, Ecuador</p>
                 <p>+593 96 265 9728</p>
@@ -34,50 +34,51 @@
         </header>
 
         <div class="download-btn">
+            <button id="lang-toggle">🌍 ES</button>
             <button id="theme-toggle">🌙 Dark Mode</button>
             <a href="cv.pdf" download>⬇ Download CV</a>
         </div>
 
         <main>
             <section>
-                <h2>Skills</h2>
-                <p>Python, Java, C, MySQL, MongoDB, HTML, CSS, Power Automate, Troubleshooting, Teamwork, Leadership, Technical Mentoring</p>
+                <h2 id="skills-title">Skills</h2>
+                <p id="skills-desc">Python, Java, C, MySQL, MongoDB, HTML, CSS, Power Automate, Troubleshooting, Teamwork, Leadership, Technical Mentoring</p>
             </section>
 
             <section>
-                <h2>Education</h2>
+                <h2 id="education-title">Education</h2>
                 <article>
-                    <h3>ESPOL, Guayaquil - Bachelor of Science in Computer Engineering</h3>
-                    <p><time datetime="2024-05">May 2024</time> so far</p>
-                    <p>Relevant coursework: Data Structures, Web Development, Databases</p>
+                    <h3 id="education-desc">ESPOL, Guayaquil - Bachelor of Science in Computer Engineering</h3>
+                    <p><time datetime="2024-05">May 2024</time> <span id="date-education">so far</span></p>
+                    <p id="subjects">Relevant coursework: Data Structures, Web Development, Databases</p>
                 </article>
             </section>
 
             <section>
-                <h2>Experience</h2>
+                <h2 id="experience-title">Experience</h2>
                 <article>
-                    <h3>ESPOL, Guayaquil - Teaching Assistant</h3>
-                    <p><time datetime="2025-09">September 2025</time> so far</p>
+                    <h3 id="first-job">ESPOL, Guayaquil - Teaching Assistant</h3>
+                    <p><time datetime="2025-09">September 2025</time> <span id="date-job1">so far</span></p>
                     <ul>
-                        <li>Conducted Practical Lessons Focused on Python Programming</li>
-                        <li>Responsible for Evaluating Assignments</li>
-                        <li>Provided Technical Mentorship and Logistical Support During the PyWeekend</li>
+                        <li id="li-1">Conducted Practical Lessons Focused on Python Programming</li>
+                        <li id="li-2">Responsible for Evaluating Assignments</li>
+                        <li id="li-3">Provided Technical Mentorship and Logistical Support During the PyWeekend</li>
                     </ul>
-                    <p>Skills: Troubleshooting, Teamwork, Leadership, Technical Mentoring</p>    
+                    <p id="skills-teaching">Skills: Troubleshooting, Teamwork, Leadership, Technical Mentoring</p>    
                 </article>
                 <article>
-                    <h3>ESPOL, Guayaquil - Vice Chair, IEEE Computer Society Student Branch Chapter</h3>
-                    <p><time datetime="2026-02">February 2026</time> so far</p>
+                    <h3 id="second-job">ESPOL, Guayaquil - Vice Chair, IEEE Computer Society Student Branch Chapter</h3>
+                    <p><time datetime="2026-02">February 2026</time> <span id="date-job2">so far</span></p>
                     <ul>
-                        <li>Co-lead the chapter’s strategic planning and operations to promote computer science and engineering</li>
-                        <li>Responsible for coordinating technical workshops, seminars, and networking events, ensuring high engagement and value for the student community</li>
+                        <li id="li-4">Co-lead the chapter’s strategic planning and operations to promote computer science and engineering</li>
+                        <li id="li-5">Responsible for coordinating technical workshops, seminars, and networking events, ensuring high engagement and value for the student community</li>
                     </ul>
-                    <p>Skills: Troubleshooting, Teamwork, Leadership</p>    
+                    <p id="skills-vicechair">Skills: Troubleshooting, Teamwork, Leadership</p>    
                 </article>
             </section>
 
             <section>
-                <h2>Across the Internet</h2>
+                <h2 id="internet-title">Across the Internet</h2>
                 <ul>
                     <li><a href="https://www.linkedin.com/in/john-carreño-07340930b/">LinkedIn</a></li>
                     <li><a href="https://github.com/John0487">GitHub</a></li>
@@ -96,6 +97,66 @@
                 } else {
                     button.textContent = '🌙 Dark Mode';
                 }
+            });
+
+            const translations = {
+                en: {
+                    'job-title': 'Developer',
+                    'skills-title': 'Skills',
+                    'skills-desc': 'Python, Java, C, MySQL, MongoDB, HTML, CSS, Power Automate, Troubleshooting, Teamwork, Leadership, Technical Mentoring',
+                    'education-title': 'Education',
+                    'education-desc': 'ESPOL, Guayaquil - Bachelor of Science in Computer Engineering',
+                    'subjects': 'Relevant coursework: Data Structures, Web Development, Databases',
+                    'date-education': 'so far',
+                    'experience-title': 'Experience',
+                    'first-job': 'ESPOL, Guayaquil - Teaching Assistant',
+                    'date-job1': 'so far',
+                    'li-1': 'Conducted Practical Lessons Focused on Python Programming',
+                    'li-2': 'Responsible for Evaluating Assignments',
+                    'li-3': 'Provided Technical Mentorship and Logistical Support During the PyWeekend',
+                    'skills-teaching': 'Skills: Troubleshooting, Teamwork, Leadership, Technical Mentoring',
+                    'second-job': 'ESPOL, Guayaquil - Vice Chair, IEEE Computer Society Student Branch Chapter',
+                    'date-job2': 'so far',
+                    'li-4': 'Co-lead the chapter\'s strategic planning and operations to promote computer science and engineering',
+                    'li-5': 'Responsible for coordinating technical workshops, seminars, and networking events, ensuring high engagement and value for the student community',
+                    'skills-vicechair': 'Skills: Troubleshooting, Teamwork, Leadership',
+                    'internet-title': 'Across the Internet'
+                },
+                es: {
+                    'job-title': 'Desarrollador',
+                    'skills-title': 'Habilidades',
+                    'skills-desc': 'Python, Java, C, MySQL, MongoDB, HTML, CSS, Power Automate, Resolución de Problemas, Trabajo en Equipo, Liderazgo, Mentoría Técnica',
+                    'education-title': 'Educación',
+                    'education-desc': 'ESPOL, Guayaquil - Ingeniería en Ciencias de la Computación',
+                    'subjects': 'Materias relevantes: Estructuras de Datos, Desarrollo Web, Bases de Datos',
+                    'date-education': 'hasta hoy',
+                    'experience-title': 'Experiencia',
+                    'first-job': 'ESPOL, Guayaquil - Asistente de Cátedra',
+                    'date-job1': 'hasta hoy',
+                    'li-1': 'Dictó clases prácticas enfocadas en programación con Python',
+                    'li-2': 'Responsable de evaluar tareas y asignaciones',
+                    'li-3': 'Brindó mentoría técnica y apoyo logístico durante el PyWeekend',
+                    'skills-teaching': 'Habilidades: Resolución de Problemas, Trabajo en Equipo, Liderazgo, Mentoría Técnica',
+                    'second-job': 'ESPOL, Guayaquil - Vicepresidente, Capítulo Estudiantil IEEE Computer Society',
+                    'date-job2': 'hasta hoy',
+                    'li-4': 'Colideró la planificación estratégica y operaciones del capítulo para promover las ciencias de la computación e ingeniería',
+                    'li-5': 'Responsable de coordinar talleres técnicos, seminarios y eventos de networking, garantizando alta participación y valor para la comunidad estudiantil',
+                    'skills-vicechair': 'Habilidades: Resolución de Problemas, Trabajo en Equipo, Liderazgo',
+                    'internet-title': 'En Internet'
+                }
+            };
+
+            let currentLang = 'en'
+            const langButton = document.getElementById('lang-toggle');
+
+            langButton.addEventListener('click',function() {
+                currentLang = currentLang === 'en' ? 'es' : 'en';
+
+                for (let id in translations[currentLang]){
+                    document.getElementById(id).textContent = translations[currentLang][id];
+                }
+
+                langButton.textContent = currentLang === 'en' ? '🌍 ES' : '🌍 EN';
             });
         </script>
     </body>

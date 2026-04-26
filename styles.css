@@ -141,3 +141,18 @@ body.dark header {
 #theme-toggle:hover {
   background-color: #555;
 }
+
+#lang-toggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+#lang-toggle:hover {
+  background-color: #555;
+}
