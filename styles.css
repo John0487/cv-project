@@ -99,3 +99,45 @@ a {
 .download-btn a:hover {
     background-color: #1b5e20;
 }
+
+/* Modo oscuro */
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark h2 {
+    color: #81c784;
+}
+
+body.dark h3 {
+  color: #81c784;
+}
+
+body.dark header p {
+  color: #81c784;
+}
+
+body.dark a {
+  color: #81c784;
+}
+
+body.dark header {
+  border-bottom-color: #e0e0e0;
+}
+
+/* Botón de tema */
+#theme-toggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+#theme-toggle:hover {
+  background-color: #555;
+}
